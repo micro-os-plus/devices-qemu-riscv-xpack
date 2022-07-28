@@ -1,0 +1,26 @@
+{
+  "minimumXpmakeRequired": "0.0.0",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2022 Liviu Ionescu",
+  "description": "Top QEMU RISC-V components",
+  "cdlComponents": {
+    "devices-qemu-riscv": {
+      "description": "The QEMU RISC-V device definitions.",
+      "parent": "micro-os-plus",
+      "compilerIncludeFolders": [
+        "include"
+      ],
+      "compilerSourceFiles": [
+        "src/reset-entry.S"
+      ],
+      "$comment": "Clarify how to use the device definition, known in the platform",
+      "compilerDefinitions": [],
+      "compilerOptions": [],
+      "dependencies": [],
+      "generatedDefinition": "MICRO_OS_PLUS_INCLUDE_DEVICES_QEMU_RISCV",
+      "implementedInterfaces": [
+        "device"
+      ]
+    }
+  }
+}
