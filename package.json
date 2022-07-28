@@ -22,7 +22,8 @@
   "keywords": [
     "xpack",
     "risc-v",
-    "micro-os-plus"
+    "micro-os-plus",
+    "qemu"
   ],
   "author": {
     "name": "Liviu Ionescu",
