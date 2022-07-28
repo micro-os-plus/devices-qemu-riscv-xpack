@@ -1,2 +1,4 @@
 # devices-qemu-riscv-xpack
-A source library xPack with the µOS++ QEMU RISC-V board support files
+
+This project does not use the `master` branch, please
+switch to the `xpack` branch to get the project files.
