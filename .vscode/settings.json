@@ -19,5 +19,6 @@
     "xpacks"
   ],
   "cmake.configureOnOpen": false,
+  "makefile.configureOnOpen": false,
   "editor.wordWrap": "on"
 }
