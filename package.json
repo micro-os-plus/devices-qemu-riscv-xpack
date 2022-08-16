@@ -15,10 +15,10 @@
     "type": "git",
     "url": "https://github.com/micro-os-plus/devices-qemu-riscv-xpack.git"
   },
+  "homepage": "https://github.com/micro-os-plus/devices-qemu-riscv-xpack/",
   "bugs": {
     "url": "https://github.com/micro-os-plus/devices-qemu-riscv-xpack/issues/"
   },
-  "homepage": "https://github.com/micro-os-plus/devices-qemu-riscv-xpack/",
   "keywords": [
     "xpack",
     "risc-v",
@@ -33,8 +33,14 @@
   "license": "MIT",
   "config": {},
   "dependencies": {},
+  "bundleDependencies": [],
   "devDependencies": {},
   "xpack": {
-    "minimumXpmRequired": "0.13.7"
+    "minimumXpmRequired": "0.14.0",
+    "dependencies": {},
+    "devDependencies": {},
+    "properties": {},
+    "actions": {},
+    "buildConfigurations": {}
   }
 }
