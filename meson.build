@@ -40,7 +40,7 @@ micro_os_plus_devices_qemu_riscv_dependency = declare_dependency(
   ],
   dependencies: [
     # micro_os_plus_startup_dependency,
-  ],
+  ]
 )
 
 message('+ -I include')
