@@ -2,7 +2,7 @@
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/micro-os-plus/devices-qemu-riscv-xpack)](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/tags/)
 [![npm (scoped)](https://img.shields.io/npm/v/@micro-os-plus/devices-qemu-riscv.svg?color=blue)](https://www.npmjs.com/package/@micro-os-plus/devices-qemu-riscv/)
 [![license](https://img.shields.io/github/license/micro-os-plus/devices-qemu-riscv-xpack)](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/blob/xpack/LICENSE)
-[![CI on Push](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/actions/workflows/CI.yml/badge.svg)](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/actions/workflows/CI.yml)
+[![CI on Push](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/actions/workflows/ci.yml/badge.svg)](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/actions/workflows/ci.yml)
 
 # A source library xPack with the µOS++ QEMU RISC-V board support files
 
