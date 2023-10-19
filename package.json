@@ -1,7 +1,7 @@
 {
   "name": "@micro-os-plus/devices-qemu-riscv",
   "version": "1.0.1",
-  "description": "A source xPack with the µOS++ QEMU RISC-V board support files",
+  "description": "A source code library with the µOS++ QEMU RISC-V board support files",
   "main": "",
   "scripts": {
     "npm-install": "npm install",
