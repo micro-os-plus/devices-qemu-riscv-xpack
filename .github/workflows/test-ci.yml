@@ -13,7 +13,7 @@
 #
 # -----------------------------------------------------------------------------
 
-# https://github.com/micro-os-plus/devices-qemu-riscv-xpack
+# https://micro-os-plus.github.io/devices-qemu-riscv-xpack/
 # https://github.com/micro-os-plus/devices-qemu-riscv-xpack/actions/workflows/test-ci.yml
 
 # Workflow for running some tests on each Push.
