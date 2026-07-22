@@ -47,7 +47,7 @@ cmake_minimum_required (VERSION 3.20)
 project (
   {{packageScope}}-{{packageName}}
   DESCRIPTION "{{package.description}}"
-  LANGUAGES C CXX
+  LANGUAGES C CXX ASM
 )
 
 # To access the optional functions, include the
