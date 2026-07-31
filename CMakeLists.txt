@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# DO NOT EDIT! Automatically generated from xcdl-package.jsonc.
+# DO NOT EDIT! Automatically generated from template file: xcdl-package.jsonc
 #
 # This file is part of the µOS++ project (https://micro-os-plus.github.io/).
 # Copyright (c) 2021-2026 Liviu Ionescu. All rights reserved.
@@ -28,7 +28,8 @@
 cmake_minimum_required (VERSION 3.20)
 project (
   micro-os-plus-devices-qemu-riscv
-  DESCRIPTION "A source code library with the µOS++ QEMU RISC-V board support files"
+  DESCRIPTION
+    "A source code library with the µOS++ QEMU RISC-V board support files"
   LANGUAGES C CXX ASM
 )
 
@@ -60,25 +61,23 @@ endif ()
 # read-only; properties must be set on the underlying target, not on the alias
 # itself.
 
-
-
 # https://cmake.org/cmake/help/v3.20/command/add_library.html?highlight=interface#interface-libraries
 # Visibility keywords: PRIVATE applies to the target itself; INTERFACE passes
 # properties up to targets that link against it; PUBLIC does both.
-add_library (micro-os-plus-devices-qemu-riscv-interface INTERFACE EXCLUDE_FROM_ALL)
+add_library (
+  micro-os-plus-devices-qemu-riscv-interface INTERFACE EXCLUDE_FROM_ALL
+)
 
 target_include_directories (
-  micro-os-plus-devices-qemu-riscv-interface 
-  INTERFACE "include"
+  micro-os-plus-devices-qemu-riscv-interface INTERFACE "include"
 )
 
 target_sources (
-  micro-os-plus-devices-qemu-riscv-interface
-  INTERFACE "src/reset-entry.S"
+  micro-os-plus-devices-qemu-riscv-interface INTERFACE "src/reset-entry.S"
 )
 
 target_link_libraries (
-  micro-os-plus-devices-qemu-riscv-interface 
+  micro-os-plus-devices-qemu-riscv-interface
   INTERFACE "micro-os-plus::architecture"
 )
 
@@ -91,7 +90,8 @@ endif ()
 
 # https://cmake.org/cmake/help/v3.20/command/add_library.html#alias-libraries
 add_library (
-  micro-os-plus::devices-qemu-riscv ALIAS micro-os-plus-devices-qemu-riscv-interface
+  micro-os-plus::devices-qemu-riscv ALIAS
+  micro-os-plus-devices-qemu-riscv-interface
 )
 message (
   VERBOSE
@@ -101,9 +101,8 @@ message (
 add_library (
   micro-os-plus::device ALIAS micro-os-plus-devices-qemu-riscv-interface
 )
-message (
-  VERBOSE
-  "> micro-os-plus::device -> micro-os-plus-devices-qemu-riscv-interface"
+message (VERBOSE
+         "> micro-os-plus::device -> micro-os-plus-devices-qemu-riscv-interface"
 )
 
 # -----------------------------------------------------------------------------
