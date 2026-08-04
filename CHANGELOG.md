@@ -6,8 +6,15 @@ Please check
 [GitHub](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/issues/)
 and close existing issues and pull requests.
 
+## 2026-08-04
+
+* v2.0.0
+* c4950a6 re-generate top commons
+
 ## 2026-07-31
 
+* af3721c package*.json update
+* 48d72f7 CHANGELOG update
 * 2300609 re-generate top xcdl
 * 7d57558 re-generate top xcdl
 * a990061 re-generate top commons
