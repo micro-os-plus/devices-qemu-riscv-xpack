@@ -27,7 +27,7 @@
 # -----------------------------------------------------------------------------
 
 # A source code library with the µOS++ QEMU RISC-V board support files.
-message('Processing xPack @micro-os-plus/devices-qemu-riscv...')
+message('Processing xpm package @micro-os-plus/devices-qemu-riscv...')
 
 # -----------------------------------------------------------------------------
 
