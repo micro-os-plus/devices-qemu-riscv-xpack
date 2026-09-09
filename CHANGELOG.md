@@ -6,9 +6,24 @@ Please check
 [GitHub](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/issues/)
 and close existing issues and pull requests.
 
+## 2026-09-09
+
+* v2.0.1
+* 1b5a284 re-format cmake
+
+## 2026-09-07
+
+* bda6262 cosmetise linker scripts
+* e0f0120 cosmetics xpm packages
+
+## 2026-08-05
+
+* 15255b0 readme cosmetics
+
 ## 2026-08-04
 
-* v2.0.0
+* 6195358 2.0.0
+* acf3732 prepare v2.0.0
 * c4950a6 re-generate top commons
 
 ## 2026-07-31
