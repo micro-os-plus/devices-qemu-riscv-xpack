@@ -18,6 +18,17 @@
 
   .section .reset_entry,"ax",@progbits
   .align    2 // number of low order zeros, i.e. align to a multiple of 4
+
+  .globl    _debugger_entry_point
+  .type     _debugger_entry_point, @function
+_debugger_entry_point:
+  // Required to satisfy the linker script definitions:  
+  // ENTRY(_debugger_entry_point)
+
+  // On RISC-V there are no custom initialisations to be done when the
+  // application is started by a debugger, so this can be the same as
+  // the reset.
+
   .globl    reset_entry
   .type     reset_entry, @function
 reset_entry:
