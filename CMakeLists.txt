@@ -19,7 +19,7 @@
 # This creates libraries that can be linked to a target with:
 #
 # ~~~
-# target_link_libraries(your-target PUBLIC micro-os-plus::devices-qemu-riscv)
+# target_link_libraries(your-target PUBLIC micro-os-plus::device-qemu-riscv)
 # ~~~
 
 # -----------------------------------------------------------------------------
@@ -66,24 +66,20 @@ endif ()
 # Visibility keywords: PRIVATE applies to the target itself; INTERFACE passes
 # properties up to targets that link against it; PUBLIC does both.
 add_library (
-  micro-os-plus-devices-qemu-riscv-interface INTERFACE EXCLUDE_FROM_ALL
+  micro-os-plus-device-qemu-riscv-interface INTERFACE EXCLUDE_FROM_ALL
 )
 
 target_include_directories (
-  micro-os-plus-devices-qemu-riscv-interface INTERFACE "include"
-)
-
-target_sources (
-  micro-os-plus-devices-qemu-riscv-interface INTERFACE "src/reset-entry.S"
+  micro-os-plus-device-qemu-riscv-interface INTERFACE "include"
 )
 
 target_link_libraries (
-  micro-os-plus-devices-qemu-riscv-interface
+  micro-os-plus-device-qemu-riscv-interface
   INTERFACE "micro-os-plus::architecture"
 )
 
 if (COMMAND xpack_display_target_lists)
-  xpack_display_target_lists (micro-os-plus-devices-qemu-riscv-interface)
+  xpack_display_target_lists (micro-os-plus-device-qemu-riscv-interface)
 endif ()
 
 # -----------------------------------------------------------------------------
@@ -91,19 +87,12 @@ endif ()
 
 # https://cmake.org/cmake/help/v3.20/command/add_library.html#alias-libraries
 add_library (
-  micro-os-plus::devices-qemu-riscv ALIAS
-  micro-os-plus-devices-qemu-riscv-interface
+  micro-os-plus::device-qemu-riscv ALIAS
+  micro-os-plus-device-qemu-riscv-interface
 )
 message (
   VERBOSE
-  "> micro-os-plus::devices-qemu-riscv -> micro-os-plus-devices-qemu-riscv-interface"
-)
-
-add_library (
-  micro-os-plus::device ALIAS micro-os-plus-devices-qemu-riscv-interface
-)
-message (VERBOSE
-         "> micro-os-plus::device -> micro-os-plus-devices-qemu-riscv-interface"
+  "> micro-os-plus::device-qemu-riscv -> micro-os-plus-device-qemu-riscv-interface"
 )
 
 # -----------------------------------------------------------------------------

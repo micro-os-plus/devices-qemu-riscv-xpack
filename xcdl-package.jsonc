@@ -6,16 +6,13 @@
   "description": "Top QEMU RISC-V components",
   "cdlComponents": [
     {
-      "id": "micro-os-plus.devices.qemu-riscv",
-      "alias": "micro-os-plus.device",
+      "id": "micro-os-plus.device.qemu-riscv",
       "display": "QEMU RISC-V devices",
       "description": "The QEMU RISC-V devices definitions",
       "publicIncludeFolders": [
         "include"
       ],
-      "sourceFiles": [
-        "src/reset-entry.S"
-      ],
+      "sourceFiles": [],
       // Clarify how to use the device definition, known in the platform.
       "dependencies": [
         // "micro-os-plus.diag.trace",
@@ -28,7 +25,7 @@
         "type": "c-header",
         "filePath": "{{buildFolderPath}}/generated/include/micro-os-plus/device-defines.h"
       },
-      // "defaultDefine": "MICRO_OS_PLUS_DEVICES_QEMU_RISCV_ENABLED",
+      // "defaultDefine": "MICRO_OS_PLUS_DEVICE_QEMU_RISCV_ENABLED",
       "cdlOptions": [
         {
           "id": "core",
