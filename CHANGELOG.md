@@ -6,9 +6,16 @@ Please check
 [GitHub](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/issues/)
 and close existing issues and pull requests.
 
+## 2026-11-07
+
+* v3.0.0
+* 65c154e devices.qemu-riscv (singular)
+* 5c46129 re-generate top commons
+
 ## 2026-09-10
 
-* v2.1.0
+* 6413ec6 2.1.0
+* b5e2be1 prepare v2.1.0
 * 248cc13 cleanups
 * 135a4a1 linker scripts updates
 * 67ce2d7 add _debugger_entry_point
