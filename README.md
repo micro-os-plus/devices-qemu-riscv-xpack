@@ -6,7 +6,7 @@
 
 # A source code library with the µOS++ QEMU RISC-V board support files
 
-This project provides the **device-qemu-riscv** source library as an xPack
+This project provides the **device-qemu-riscv** source library as an `xpm`
 dependency and includes the initialization code required to build
 applications running on the QEMU RISC-V boards.
 
@@ -26,7 +26,7 @@ For maintainer info, please see the
 
 ## Install
 
-As a source library xPack, the easiest way to add it to a project is via
+As a source library xpm package, the easiest way to add it to a project is via
 **xpm**, but it can also be used as any Git project, for example as a submodule.
 
 ### Prerequisites
@@ -181,7 +181,7 @@ dependency with:
 ```cmake
 target_link_libraries(your-target PRIVATE
 
-  micro-os-plus::devices-qemu-riscv
+  micro-os-plus::device-qemu-riscv
 )
 ```
 
@@ -204,7 +204,7 @@ exe = executable(
     # Nothing, not static.
   ],
   dependencies: [
-    micro_os_plus_devices_qemu_riscv_dependency,
+    micro_os_plus_device_qemu_riscv_dependency,
   ]
 )
 ```
